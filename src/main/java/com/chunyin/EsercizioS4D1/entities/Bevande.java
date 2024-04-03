@@ -12,7 +12,10 @@ public class Bevande {
     private double price;
     private double nutritionalInfo;
 
-    public Bevande() {
+    public Bevande(String name, double price, double nutritionalInfo) {
+        this.name = name;
+        this.price = price;
+        this.nutritionalInfo = nutritionalInfo;
     }
 
     @Override

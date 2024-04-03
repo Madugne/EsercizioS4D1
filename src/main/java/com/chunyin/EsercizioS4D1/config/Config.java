@@ -1,9 +1,6 @@
 package com.chunyin.EsercizioS4D1.config;
 
-import com.chunyin.EsercizioS4D1.entities.Ananas;
-import com.chunyin.EsercizioS4D1.entities.Pizza;
-import com.chunyin.EsercizioS4D1.entities.PizzaMargherita;
-import com.chunyin.EsercizioS4D1.entities.Prosciutto;
+import com.chunyin.EsercizioS4D1.entities.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -27,5 +24,10 @@ public class Config {
     @Bean("hawaiian")
     Pizza hawaiianPizza() {
         return new Ananas(new Prosciutto(new PizzaMargherita()));
+    }
+
+    @Bean("soda")
+    Bevande wine() {
+        return new Bevande("Soda", 3, 3);
     }
 }

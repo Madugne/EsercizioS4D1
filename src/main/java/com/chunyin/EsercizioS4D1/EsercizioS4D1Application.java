@@ -14,21 +14,21 @@ public class EsercizioS4D1Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EsercizioS4D1Application.class, args);
-		menu();
+//		menu();
 	}
 
-	public static void menu() {
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
-		Pizza margherita = ctx.getBean("margherita", Pizza.class);
-		Pizza hawaiian = ctx.getBean("hawaiian", Pizza.class);
-
-		System.out.println("Pizza Margherita: " + margherita.getName() + ", Prezzo: " + margherita.getPrice()
-				+ ", Info Nutrizionali: " + margherita.getNutritionalInfo());
-		System.out.println("Pizza Hawaiian: " + hawaiian.getName() + ", Prezzo: " + hawaiian.getPrice()
-				+ ", Info Nutrizionali: " + hawaiian.getNutritionalInfo());
-		log.info(ctx.getBean("margherita").toString());
-		log.info(ctx.getBean("prosciutto").toString());
-
-	}
+//	public static void menu() {
+//		ApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
+//		Pizza margherita = ctx.getBean("margherita", Pizza.class);
+//		Pizza hawaiian = ctx.getBean("hawaiian", Pizza.class);
+//
+//		System.out.println("Pizza Margherita: " + margherita.getName() + ", Prezzo: " + margherita.getPrice()
+//				+ ", Info Nutrizionali: " + margherita.getNutritionalInfo());
+//		System.out.println("Pizza Hawaiian: " + hawaiian.getName() + ", Prezzo: " + hawaiian.getPrice()
+//				+ ", Info Nutrizionali: " + hawaiian.getNutritionalInfo());
+//		log.info(ctx.getBean("margherita").toString());
+//		log.info(ctx.getBean("prosciutto").toString());
+//
+//	}
 
 }
